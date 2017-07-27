@@ -102,6 +102,7 @@
 		18DD3DBF1E30A86A00654063 /* SQLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DD3DBE1E30A86A00654063 /* SQLTool.m */; };
 		18F23C321E08BC44008A20F2 /* NSDictionary+SafeValueControl_Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F23C311E08BC44008A20F2 /* NSDictionary+SafeValueControl_Dictionary.m */; };
 		1BBA101FE6F1E060AE63581C /* Pods_________.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B306D3538B45DD1004B1D0 /* Pods_________.framework */; };
+		72A80B591F29932500A7A5E6 /* CalenderTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A80B581F29932500A7A5E6 /* CalenderTool.m */; };
 		881AC6471E666162001B5C69 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881AC6461E666162001B5C69 /* CoreLocation.framework */; };
 		881AC6491E66616D001B5C69 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881AC6481E66616D001B5C69 /* AVFoundation.framework */; };
 		881AC64B1E666178001B5C69 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881AC64A1E666178001B5C69 /* AddressBook.framework */; };
@@ -275,6 +276,8 @@
 		18F23C311E08BC44008A20F2 /* NSDictionary+SafeValueControl_Dictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeValueControl_Dictionary.m"; sourceTree = "<group>"; };
 		1E7A24B5D263840EA3F8E34B /* Pods-杨天赐的个人项目.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-杨天赐的个人项目.debug.xcconfig"; path = "Pods/Target Support Files/Pods-杨天赐的个人项目/Pods-杨天赐的个人项目.debug.xcconfig"; sourceTree = "<group>"; };
 		61B306D3538B45DD1004B1D0 /* Pods_________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A80B571F29932500A7A5E6 /* CalenderTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenderTool.h; sourceTree = "<group>"; };
+		72A80B581F29932500A7A5E6 /* CalenderTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenderTool.m; sourceTree = "<group>"; };
 		881AC6441E66601F001B5C69 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = ../../../../../../../Users/risenb/Downloads/iOS_voice_1150_58b62355/lib/iflyMSC.framework; sourceTree = "<group>"; };
 		881AC6461E666162001B5C69 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		881AC6481E66616D001B5C69 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -438,6 +441,7 @@
 		182175221E10E94000A52A3E /* OtherToolBox */ = {
 			isa = PBXGroup;
 			children = (
+				72A80B561F29932500A7A5E6 /* SystemCalenderTool */,
 				183C449F1E55471700AF7F46 /* 全局工具类 */,
 				18C41C1E1E48502E007D53E1 /* RuntimeTool */,
 				18DD3DA51E306CED00654063 /* FilePath */,
@@ -1097,6 +1101,15 @@
 			path = ShowController;
 			sourceTree = "<group>";
 		};
+		72A80B561F29932500A7A5E6 /* SystemCalenderTool */ = {
+			isa = PBXGroup;
+			children = (
+				72A80B571F29932500A7A5E6 /* CalenderTool.h */,
+				72A80B581F29932500A7A5E6 /* CalenderTool.m */,
+			);
+			path = SystemCalenderTool;
+			sourceTree = "<group>";
+		};
 		881AC6411E665EAA001B5C69 /* iflySDK(讯飞语音识别) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1320,6 +1333,7 @@
 				1847741F1E125FB500138ED9 /* BaseViewModel.m in Sources */,
 				18DD3DBF1E30A86A00654063 /* SQLTool.m in Sources */,
 				18639F7D1E52B44B00446527 /* PartTwo_NavController.m in Sources */,
+				72A80B591F29932500A7A5E6 /* CalenderTool.m in Sources */,
 				183C44A21E55475900AF7F46 /* ApplicationTool.m in Sources */,
 				18DD3DB61E3097D300654063 /* ArchiveModel.m in Sources */,
 				1836C5741E28EFDE009D95A9 /* Socket_ShortLink_Controller.m in Sources */,
@@ -1463,8 +1477,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/杨天赐的个人项目/SourceFiles/iflySDK(讯飞语音识别)/lib",
 				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Volumes/杨天赐/ImportData/Code/IOS/Products/杨天赐的个人项目/杨天赐的个人项目/YTC_Custom_Libiary/PCHs/YTC_Custom_Libiary_PCH.pch";
+				GCC_PREFIX_HEADER = "/Users/Dicky/Desktop/GitHubFolder/iOS-YTC/杨天赐的个人项目/YTC_Custom_Libiary/PCHs/YTC_Custom_Libiary_PCH.pch";
 				INFOPLIST_FILE = "杨天赐的个人项目/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1493,8 +1508,9 @@
 					"$(PROJECT_DIR)/杨天赐的个人项目/SourceFiles/iflySDK(讯飞语音识别)",
 					"$(PROJECT_DIR)/杨天赐的个人项目/SourceFiles/iflySDK(讯飞语音识别)/lib",
 				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Volumes/杨天赐/ImportData/Code/IOS/Products/杨天赐的个人项目/杨天赐的个人项目/YTC_Custom_Libiary/PCHs/YTC_Custom_Libiary_PCH.pch";
+				GCC_PREFIX_HEADER = "/Users/Dicky/Desktop/GitHubFolder/iOS-YTC/杨天赐的个人项目/YTC_Custom_Libiary/PCHs/YTC_Custom_Libiary_PCH.pch";
 				INFOPLIST_FILE = "杨天赐的个人项目/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
