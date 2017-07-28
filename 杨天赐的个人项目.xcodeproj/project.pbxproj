@@ -102,6 +102,7 @@
 		18DD3DBF1E30A86A00654063 /* SQLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DD3DBE1E30A86A00654063 /* SQLTool.m */; };
 		18F23C321E08BC44008A20F2 /* NSDictionary+SafeValueControl_Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F23C311E08BC44008A20F2 /* NSDictionary+SafeValueControl_Dictionary.m */; };
 		1BBA101FE6F1E060AE63581C /* Pods_________.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B306D3538B45DD1004B1D0 /* Pods_________.framework */; };
+		725605EF1F2B424B0093F566 /* QBXPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 725605EE1F2B424B0093F566 /* QBXPhotoManager.m */; };
 		72A80B591F29932500A7A5E6 /* CalenderTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A80B581F29932500A7A5E6 /* CalenderTool.m */; };
 		881AC6471E666162001B5C69 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881AC6461E666162001B5C69 /* CoreLocation.framework */; };
 		881AC6491E66616D001B5C69 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881AC6481E66616D001B5C69 /* AVFoundation.framework */; };
@@ -276,6 +277,8 @@
 		18F23C311E08BC44008A20F2 /* NSDictionary+SafeValueControl_Dictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeValueControl_Dictionary.m"; sourceTree = "<group>"; };
 		1E7A24B5D263840EA3F8E34B /* Pods-杨天赐的个人项目.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-杨天赐的个人项目.debug.xcconfig"; path = "Pods/Target Support Files/Pods-杨天赐的个人项目/Pods-杨天赐的个人项目.debug.xcconfig"; sourceTree = "<group>"; };
 		61B306D3538B45DD1004B1D0 /* Pods_________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		725605ED1F2B424B0093F566 /* QBXPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBXPhotoManager.h; sourceTree = "<group>"; };
+		725605EE1F2B424B0093F566 /* QBXPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBXPhotoManager.m; sourceTree = "<group>"; };
 		72A80B571F29932500A7A5E6 /* CalenderTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenderTool.h; sourceTree = "<group>"; };
 		72A80B581F29932500A7A5E6 /* CalenderTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenderTool.m; sourceTree = "<group>"; };
 		881AC6441E66601F001B5C69 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = ../../../../../../../Users/risenb/Downloads/iOS_voice_1150_58b62355/lib/iflyMSC.framework; sourceTree = "<group>"; };
@@ -441,6 +444,7 @@
 		182175221E10E94000A52A3E /* OtherToolBox */ = {
 			isa = PBXGroup;
 			children = (
+				725605EC1F2B424B0093F566 /* PhotosManager */,
 				72A80B561F29932500A7A5E6 /* SystemCalenderTool */,
 				183C449F1E55471700AF7F46 /* 全局工具类 */,
 				18C41C1E1E48502E007D53E1 /* RuntimeTool */,
@@ -1101,6 +1105,15 @@
 			path = ShowController;
 			sourceTree = "<group>";
 		};
+		725605EC1F2B424B0093F566 /* PhotosManager */ = {
+			isa = PBXGroup;
+			children = (
+				725605ED1F2B424B0093F566 /* QBXPhotoManager.h */,
+				725605EE1F2B424B0093F566 /* QBXPhotoManager.m */,
+			);
+			path = PhotosManager;
+			sourceTree = "<group>";
+		};
 		72A80B561F29932500A7A5E6 /* SystemCalenderTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -1338,6 +1351,7 @@
 				18DD3DB61E3097D300654063 /* ArchiveModel.m in Sources */,
 				1836C5741E28EFDE009D95A9 /* Socket_ShortLink_Controller.m in Sources */,
 				18AD6DA61E07E3B600634428 /* BaseViewController.m in Sources */,
+				725605EF1F2B424B0093F566 /* QBXPhotoManager.m in Sources */,
 				18AC756E1E2E0E1E00BF6AE0 /* SystemSoundTool.m in Sources */,
 				1821A5781E2F41D500AE76D9 /* KeyChinaTool.m in Sources */,
 				18AD6DAC1E07E3FA00634428 /* BaseNavigationController.m in Sources */,
