@@ -103,6 +103,7 @@
 		18F23C321E08BC44008A20F2 /* NSDictionary+SafeValueControl_Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F23C311E08BC44008A20F2 /* NSDictionary+SafeValueControl_Dictionary.m */; };
 		1BBA101FE6F1E060AE63581C /* Pods_________.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B306D3538B45DD1004B1D0 /* Pods_________.framework */; };
 		725605EF1F2B424B0093F566 /* QBXPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 725605EE1F2B424B0093F566 /* QBXPhotoManager.m */; };
+		725605FB1F2F289F0093F566 /* PieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 725605FA1F2F289F0093F566 /* PieView.m */; };
 		72A80B591F29932500A7A5E6 /* CalenderTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A80B581F29932500A7A5E6 /* CalenderTool.m */; };
 		881AC6471E666162001B5C69 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881AC6461E666162001B5C69 /* CoreLocation.framework */; };
 		881AC6491E66616D001B5C69 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881AC6481E66616D001B5C69 /* AVFoundation.framework */; };
@@ -279,6 +280,8 @@
 		61B306D3538B45DD1004B1D0 /* Pods_________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		725605ED1F2B424B0093F566 /* QBXPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBXPhotoManager.h; sourceTree = "<group>"; };
 		725605EE1F2B424B0093F566 /* QBXPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBXPhotoManager.m; sourceTree = "<group>"; };
+		725605F91F2F289F0093F566 /* PieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieView.h; sourceTree = "<group>"; };
+		725605FA1F2F289F0093F566 /* PieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieView.m; sourceTree = "<group>"; };
 		72A80B571F29932500A7A5E6 /* CalenderTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenderTool.h; sourceTree = "<group>"; };
 		72A80B581F29932500A7A5E6 /* CalenderTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenderTool.m; sourceTree = "<group>"; };
 		881AC6441E66601F001B5C69 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = ../../../../../../../Users/risenb/Downloads/iOS_voice_1150_58b62355/lib/iflyMSC.framework; sourceTree = "<group>"; };
@@ -444,6 +447,7 @@
 		182175221E10E94000A52A3E /* OtherToolBox */ = {
 			isa = PBXGroup;
 			children = (
+				725605F71F2F289F0093F566 /* ChartTool */,
 				725605EC1F2B424B0093F566 /* PhotosManager */,
 				72A80B561F29932500A7A5E6 /* SystemCalenderTool */,
 				183C449F1E55471700AF7F46 /* 全局工具类 */,
@@ -1114,6 +1118,23 @@
 			path = PhotosManager;
 			sourceTree = "<group>";
 		};
+		725605F71F2F289F0093F566 /* ChartTool */ = {
+			isa = PBXGroup;
+			children = (
+				725605F81F2F289F0093F566 /* PieChart */,
+			);
+			path = ChartTool;
+			sourceTree = "<group>";
+		};
+		725605F81F2F289F0093F566 /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				725605F91F2F289F0093F566 /* PieView.h */,
+				725605FA1F2F289F0093F566 /* PieView.m */,
+			);
+			path = PieChart;
+			sourceTree = "<group>";
+		};
 		72A80B561F29932500A7A5E6 /* SystemCalenderTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -1362,6 +1383,7 @@
 				186FA5CE1E2DBA4E00DBBEA9 /* TouchIDTool.m in Sources */,
 				187DFACF1E07C03C003D065E /* main.m in Sources */,
 				18DD3DA81E306D0000654063 /* GetFilePath.m in Sources */,
+				725605FB1F2F289F0093F566 /* PieView.m in Sources */,
 				18BE702E1E320235005E2B96 /* BrowseHistoryController.m in Sources */,
 				185EB97A1E2CBBA700F712C0 /* UIImage+EffectLibiary.m in Sources */,
 				185EB9701E2CAC9D00F712C0 /* MotionEffectController.m in Sources */,
